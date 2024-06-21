@@ -7376,14 +7376,14 @@ https://docs.aws.amazon.com/cognito/
  - [ ] Update the IAM policies to deny the launch of large EC2 instances. Apply the policies to all users 
  - [ ] Define a resource in AWS Resource Access Manager that prevents the launch of large EC2 instances. 
  - [ ] Create an IAM role in each account that denies the launch of large EC2 instances. Grant the developers IAM group access to the role.
- - [ ] Create an orgainization in AWS Organizations in the managment account with the default policy. Create a Service control prolicy that denies the launch of large  EC2 inctances and apply to all aws accounts
+ - [x] Create an orgainization in AWS Organizations in the managment account with the default policy. Create a Service control prolicy that denies the launch of large  EC2 inctances and apply to all aws accounts
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### A company has migrated a fleet of hundreds of on-premises virtual machines (VMs) to Amazon EC2 instances. The instances run a diverse fleet of Windows Server versions along with several Linux distributions. The company wants a solution that will automate inventory and updates of the operating systems. The company also needs a summary of common vulnerabilities of each instance for regular monthly reviews. What should a solutions architect recommend to meet these requirements?
 
 - [ ] Set up AWS Systems Manager Patch Manager to manage all the EC2 instances. Configure AWS Security Hub to produce monthly reports.
-- [ ] Set up AWS Systems Manager Patch Manager to manage all the EC2 instances. Deploy Amazon Inspector, and configure monthly reports.
+- [x] Set up AWS Systems Manager Patch Manager to manage all the EC2 instances. Deploy Amazon Inspector, and configure monthly reports.
 - [ ] Set up AWS Shield Advanced, and configure monthly reports. Deploy AWS Config to automate patch installations on the EC2 instances.
 - [ ] Set up Amazon GuardDuty in the account to monitor all EC2 instances. Deploy AWS Config to automate patch installations on the EC2 instances.
 
