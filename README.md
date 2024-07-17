@@ -8321,6 +8321,12 @@ data from the Oracle database to DynamoDB.
 - [ ]  Use any of the instance endpoints for the selected three nodes.
 - [ ]  Use the reader endpoint to automatically distribute the read-only workloa- 
 
+### A company has a well-architected application that streams audio data by using UDP in the AWS Cloud. The company hosts the application in the eu-central-1 Region. The company plans to offer services to North American users. A solutions architect must improve application network performance for the North American users. Which of the following is the MOST cost-effective solution?
+
+- [x] Create an AWS Global Accelerator standard accelerator with an endpoint group in eu-central-1.
+- [ ] Use AWS CloudFormation to deploy additional application infrastructure in the us-east-1 Region and the us-west-1 Region.
+- [ ] Use AWS CloudFormation to deploy additional application infrastructure in the us-east-1 Region and the us-west-1 Region.
+- [ ] Configure the application to use an Amazon Route 53 latency-based routing policy.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -8346,6 +8352,33 @@ data from the Oracle database to DynamoDB.
 - [ ]  Create an Amazon EMR cluster. Query the data by using Amazon EMR, and store the results in Amazon S3. Visualize the data in Amazon QuickSight.
 - [ ]  Create an Amazon Redshift cluster. Query the data in Amazon Redshift, and upload the results to Amazon S3. Visualize the data in Amazon QuickSight.
 
+### A company's cloud operations team wants to standardize resource remediation. The company wants to provide a standard set of governance evaluations and remediations to all member accounts in its organization in AWS Organizations. Which self-managed AWS service can the company use to meet these requirements with the LEAST amount of operational effort?
+- [ ] AWS Security Hub compliance standards
+- [x] AWS Config conformance packs
+- [ ] AWS CloudTrail
+- [ ] AWS Trusted Advisor
+
+
+### A company is designing a website that will be hosted on Amazon S3.How should users be prevented from linking directly to the assets in the S3 bucket?
+
+- [ ] Create a static website, then update the bucket policy to require users to access the resources with the static website URL.
+- [x] Create an Amazon CloudFront distribution with an origin access control (OAC) and update the bucket policy to grant permission to the OAC only.
+- [ ] Create a static website, then configure an Amazon Route 53 record set with an alias pointing to the static website. Provide this URL to users.
+- [ ] Create an Amazon CloudFront distribution with an AWS WAF web ACL that permits access to the origin server through the distribution only.
+
+### A company wants to build an immutable infrastructure for its software applications. The company wants to test the software applications before sending traffic to them. The company seeks an efficient solution that limits the effects of application bugs.Which combination of steps should a solutions architect recommend? (Select TWO.)
+- [ ] Use AWS CloudFormation to update the production infrastructure and roll back the stack if the update fails.
+- [x] Apply Amazon Route 53 weighted routing to test the staging environment and gradually increase the traffic as the tests pass.
+- [ ] Apply Amazon Route 53 failover routing to test the staging environment and fail over to the production environment if the tests pass.
+- [x] Use AWS CloudFormation with a parameter set to the staging value in a separate environment other than the production environment.
+- [ ] Use AWS CloudFormation to deploy the staging environment with a snapshot deletion policy and reuse the resources in the production environment if the tests pass.
+
+### Cost Explorer is showing charges higher than expected for Amazon Elastic Block Store (Amazon EBS) volumes connected to application servers in a production account. A significant portion of the charges from Amazon EBS are from volumes that were created as Provisioned IOPS SSD (io2) volume types. Controlling costs is the highest priority for this application. Which steps should the user take to analyze and reduce the EBS costs without incurring any application downtime? (Select TWO.)
+- [x] Use the Amazon EC2 ModifyInstanceAttribute action to enable EBS optimization on the application server instances.
+- [ ] Use the Amazon CloudWatch GetMetricData action to evaluate the read/write operations and read/write bytes of each volume.
+- [ ] Use the Amazon EC2 ModifyVolume action to reduce the size of the underutilized io2 volumes.
+- [x] Use the Amazon EC2 ModifyVolume action to change the volume type of the underutilized io2 volumes to General Purpose SSD (gp3).
+- [ ] Use an Amazon S3 PutBucketPolicy action to migrate existing volume snapshots to Amazon S3 Glacier Flexible Retrieval.
 
 **[⬆ Back to Top](#table-of-contents)**
 
