@@ -8822,3 +8822,29 @@ A company is running a multi-tier web application on AWS. The application runs i
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### A company designs a mobile app for its customers to upload photos to a website. The app needs a secure login with multi-factor authentication (MFA). The company wants to limit the initial build time and the maintenance of the solution. Which solution should a solutions architect recommend to meet these requirements?
+- [x] Use Amazon Cognito Identity with SMS-based MFA.
+- [ ] Edit IAM policies to require MFA for all users.
+- [ ] Federate IAM against the corporate Active Directory that requires MFA.
+- [ ] Use Amazon API Gateway and require server-side encryption (SSE) for photos.
+
+### An application running in a private subnet accesses an Amazon DynamoDB table. The data cannot leave the AWS network to meet security requirements. How should this requirement be met?
+- [ ] Configure a network ACL on DynamoDB to limit traffic to the private subnet.
+- [ ] Enable DynamoDB encryption at rest using an AWS Key Management Service (AWS KMS) key.
+- [ ] Add a NAT gateway and configure the route table on the private subnet.
+- [x] Create a VPC endpoint for DynamoDB and configure the endpoint policy. 
+
+### A company is planning to use Amazon S3 to store images uploaded by its users. The images must be encrypted at rest in Amazon S3. The company does not want to spend time managing and rotating the keys, but it does want to control who can access those keys. What should a solutions architect use to accomplish this?
+- [ ] Server-Side Encryption with encryption keys stored in an S3 bucket
+- [ ] Server-Side Encryption with Customer-Provided Keys (SSE-C)
+- [ ] Server-Side Encryption with encryption keys stored in AWS Systems Manager Parameter Store
+- [x] Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)
+
+### A company's legacy application is currently relying on a single-instance Amazon RDS MySQL database without encryption. Due to new compliance requirements, all existing and new data in this database must be encrypted. How should this be accomplished?
+- [ ] Create an Amazon S3 bucket with server-side encryption turned on. Move all the data to Amazon S3. Delete the RDS instance.
+- [ ] Configure RDS Multi-AZ mode with encryption at rest turned on. Perform a failover to the standby instance to delete the original instance.
+- [x] Take a snapshot of the RDS instance. Create an encrypted copy of the snapshot. Restore the RDS instance from the encrypted snapshot.
+- [ ] Create an RDS read replica with encryption at rest turned on. Promote the read replica to primary and switch the application over to the new primary. Delete the old RDS instance.
+
+
+
