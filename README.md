@@ -8976,7 +8976,7 @@ A company is running a multi-tier web application on premises. The web applicati
 - [ ]  Migrate the web application to be hosted on Amazon EC2 instances.
 - [ ]  Set up an Amazon CloudFront distribution for the web application content.
 - [ ]  Set up Amazon ElastiCache between the web application and the PostgreSQL database.
-E. Migrate the web application to be hosted on AWS Fargate with Amazon Elastic Container Service (Amazon ECS)
+- [  ] Migrate the web application to be hosted on AWS Fargate with Amazon Elastic Container Service (Amazon ECS)
 (A,E)
 
 
@@ -9235,26 +9235,25 @@ A company previously migrated its data warehouse solution to AWS. The company al
 (D)
 
 
-#389
-A mobile gaming company runs application servers on Amazon EC2 instances. The servers receive updates from players every 15 minutes. The mobile game creates a JSON object of the progress made in the game since the last update, and sends the JSON object to an Application Load Balancer. As the mobile game is played, game updates are being lost. The company wants to create a durable way to get the updates in older.What should a solutions architect recommend to decouple the system?
+### A mobile gaming company runs application servers on Amazon EC2 instances. The servers receive updates from players every 15 minutes. The mobile game creates a JSON object of the progress made in the game since the last update, and sends the JSON object to an Application Load Balancer. As the mobile game is played, game updates are being lost. The company wants to create a durable way to get the updates in older.What should a solutions architect recommend to decouple the system?
+
 - [ ]   Use Amazon Kinesis Data Streams to capture the data and store the JSON object in Amazon S3.
 - [ ]  Use Amazon Kinesis Data Firehose to capture the data and store the JSON object in Amazon S3.
-- [ ]  Use Amazon Simple Queue Service (Amazon SQS) FIFO queues to capture the data and EC2 instances to process the messages in the queue.
+- [x]  Use Amazon Simple Queue Service (Amazon SQS) FIFO queues to capture the data and EC2 instances to process the messages in the queue.
 - [ ]  Use Amazon Simple Notification Service (Amazon SNS) to capture the data and EC2 instances to process the messages sent to the Application Load Balancer.
-(C)
 
 
-#390
-A company has an application that runs on Amazon EC2 instances within a private subnet in a VP- [ ]  The instances access data in an Amazon S3 bucket in the same AWS Region. The VPC contains a NAT gateway in a public subnet to access the S3 bucket. The company wants to reduce costs by replacing the NAT gateway without compromising security or redundancy.Which solution meets these requirements?
-- [ ]   Replace the NAT gateway with a NAT instance.
+
+### A company has an application that runs on Amazon EC2 instances within a private subnet in a VPC  The instances access data in an Amazon S3 bucket in the same AWS Region. The VPC contains a NAT gateway in a public subnet to access the S3 bucket. The company wants to reduce costs by replacing the NAT gateway without compromising security or redundancy. Which solution meets these requirements?
+
+- [ ]  Replace the NAT gateway with a NAT instance.
 - [ ]  Replace the NAT gateway with an internet gateway.
-- [ ]  Replace the NAT gateway with a gateway VPC endpoint.
+- [x]  Replace the NAT gateway with a gateway VPC endpoint.
 - [ ]  Replace the NAT gateway with an AWS Direct Connect connection.
-(C)
 
 
-#391
-A company hosts a website on premises and wants to migrate it to the AWS Clou- [ ]  The website exposes a single hostname to the internet but it routes its functions to different on-premises server groups based on the path of the URL. The server groups are scaled independently depending on the needs of the functions they support. The company has an AWS Direct Connect connection configured to its on-premises network.What should a solutions architect do to provide path-based routing to send the traffic to the correct group of servers?
+
+### A company hosts a website on premises and wants to migrate it to the AWS Clou- [ ]  The website exposes a single hostname to the internet but it routes its functions to different on-premises server groups based on the path of the URL. The server groups are scaled independently depending on the needs of the functions they support. The company has an AWS Direct Connect connection configured to its on-premises network.What should a solutions architect do to provide path-based routing to send the traffic to the correct group of servers?
 - [ ]   Route all traffic to an internet gateway. Configure pattern matching rules at the internet gateway to route traffic to the group of servers supporting that path.
 - [ ]  Route all traffic to a Network Load Balancer (NLB) with target groups for each group of servers. Use pattern matching rules at the NLB to route traffic to the correct target group.
 - [x]  Route all traffic to an Application Load Balancer (ALB). Configure path-based routing at the ALB to route traffic to the correct target group for the servers supporting that path.
@@ -9267,9 +9266,6 @@ A company hosts a website on premises and wants to migrate it to the AWS Clou- [
 - [ ]  Increase the RDS database instance size.
 - [ ]  Change the RDS database instance storage type to Provisioned IOPS.
 - [ ]  Back up the RDS database, increase the storage capacity, restore the database and stop the previous instance.
-
-
-
 
 ### An ecommerce website is deploying its web application as Amazon Elastic Container Service (Amazon ECS) container instances behind an Application LoadBalancer (ALB). During periods of high activity, the website slows down and availability is reduce- [ ]  A solutions architect uses Amazon CloudWatch alarms to receive notifications whenever there is an availability issue so they can scale out resources. Company management wants a solution that automatically responds to such events.Which solution meets these requirements?
 - [ ]   Set up AWS Auto Scaling to scale out the ECS service when there are timeouts on the AL- [ ]  Set up AWS Auto Scaling to scale out the ECS cluster when the CPU or memory reservation is too high.
@@ -9288,29 +9284,27 @@ A company hosts a website on premises and wants to migrate it to the AWS Clou- [
 
 
 ## A company has an API-based inventory reporting application running on Amazon EC2 instances. The application stores information in an Amazon DynamoDB table. The companyג distribution centers have an on-premises shipping application that calls an API to update the inventory before printing shipping labels. The company has been experiencing application interruptions several times each day, resulting in lost transactions.What should a solutions architect recommend to improve application resiliency?
-- [ ]   Modify the shipping application to write to a local database.
+- [ ]  Modify the shipping application to write to a local database.
 - [ ]  Modify the application APIs to run serverless using AWS Lambda
 - [ ]  Configure Amazon API Gateway to call the EC2 inventory application APIs.
 - [x]  Modify the application to send inventory updates using Amazon Simple Queue Service (Amazon SQS).
 
 
 
-#396
-A company has a three-tier environment on AWS that ingests sensor data from its usersג€™ devices. The traffic flows through a Network Load Balancer (NLB) then toAmazon EC2 instances for the web tier, and finally toEC2 instances for the application tier that makes database calls.What should a solutions architect do to improve the security of data in transit to the web tier?
-- [ ]   Configure a TLS listener and add the server certificate on the NL- [ ] 
-- [ ]  Configure AWS Shield Advanced and enable AWS WAF on the NL- [ ] 
+### A company has a three-tier environment on AWS that ingests sensor data from its usersג€™ devices. The traffic flows through a Network Load Balancer (NLB) then toAmazon EC2 instances for the web tier, and finally toEC2 instances for the application tier that makes database calls.What should a solutions architect do to improve the security of data in transit to the web tier?
+- [x]   Configure a TLS listener and add the server certificate on the NLB
+- [ ]  Configure AWS Shield Advanced and enable AWS WAF on the NLB
 - [ ]  Change the load balancer to an Application Load Balancer and attach AWS WAF to it.
 - [ ]  Encrypt the Amazon Elastic Block Store (Amazon EBS) volume on the EC2 instances using AWS Key Management Service (AWS KMS).
-(A)
 
 
-#397
-A company runs an online marketplace web application on AWS. The application serves hundreds of thousands of users during peak hours. The company needs a scalable, near-real-time solution to share the details of millions of financial transactions with several other internal applications. Transactions also need to be processed to remove sensitive data before being stored in a document database for low-latency retrieval.What should a solutions architect recommend to meet these requirements?
+
+### A company runs an online marketplace web application on AWS. The application serves hundreds of thousands of users during peak hours. The company needs a scalable, near-real-time solution to share the details of millions of financial transactions with several other internal applications. Transactions also need to be processed to remove sensitive data before being stored in a document database for low-latency retrieval.What should a solutions architect recommend to meet these requirements?
 - [ ]   Store the transactions data into Amazon DynamoD- [ ]  Set up a rule in DynamoDB to remove sensitive data from every transaction upon write. Use DynamoDB Streams to share the transactions data with other applications.
 - [ ]  Stream the transactions data into Amazon Kinesis Data Firehose to store data in Amazon DynamoDB and Amazon S3. Use AWS Lambda integration with Kinesis Data Firehose to remove sensitive dat- [ ]   Other applications can consume the data stored in Amazon S3.
-- [ ]  Stream the transactions data into Amazon Kinesis Data Streams. Use AWS Lambda integration to remove sensitive data from every transaction and then store the transactions data in AmazonDynamoD- [ ]  Other applications can consume the transactions data off the Kinesis data stream.
+- [x]  Stream the transactions data into Amazon Kinesis Data Streams. Use AWS Lambda integration to remove sensitive data from every transaction and then store the transactions data in AmazonDynamoD- [ ]  Other applications can consume the transactions data off the Kinesis data stream.
 - [ ]  Store the batched transactions data in Amazon S3 as files. Use AWS Lambda to process every file and remove sensitive data before updating the files in Amazon S3. The Lambda function then stores the data in Amazon DynamoD- [ ]  Other applications can consume transaction files stored in Amazon S3.
-(C)
+
 
 
 
@@ -9318,9 +9312,7 @@ A company runs an online marketplace web application on AWS. The application ser
 - [ ]   Create a new SSL certificate using AWS Certificate Manager (ACM). Install the ACM certificate on each instance.
 - [ ]  Create an Amazon S3 bucket. Migrate the SSL certificate to the S3 bucket. Configure the EC2 instances to reference the bucket for SSL termination.
 - [ ]  Create another EC2 instance as a proxy server. Migrate the SSL certificate to the new instance and configure it to direct connections to the existing EC2 instances.
-- [c]  Import the SSL certificate into AWS Certificate Manager (ACM). Create an Application Load Balancer with an HTTPS listener that uses the SSL certificate from ACM.
-(D)
-
+- [x]  Import the SSL certificate into AWS Certificate Manager (ACM). Create an Application Load Balancer with an HTTPS listener that uses the SSL certificate from ACM.
 
 
 ### A web application must persist order data to Amazon S3 to support neat-real time processing. A solutions architect needs create an architecture that is both scalable and fault tolerant.Which solutions meet these requirements? (Choose two.)
@@ -9341,9 +9333,40 @@ A company runs an online marketplace web application on AWS. The application ser
 
 
 
-### A company is developing a new machine learning model solution in AWS. The models are developed as independent microservices that fetch about 1 GB of model data from Amazon S3 at startup and load the data into memory. Users access the models through an asynchronous API. Users can send a request or a batch of requests and specify where the results should be sent.The company provides models to hundreds of users. The usage patterns for the models are irregular Some models could be unused for days or weeks. Other models could receive batches of thousands of requests at a time.
-Which solution meets these requirements?
+### A company is developing a new machine learning model solution in AWS. The models are developed as independent microservices that fetch about 1 GB of model data from Amazon S3 at startup and load the data into memory. Users access the models through an asynchronous API. Users can send a request or a batch of requests and specify where the results should be sent. The company provides models to hundreds of users. The usage patterns for the models are irregular Some models could be unused for days or weeks. Other models could receive batches of thousands of requests at a time. Which solution meets these requirements?
 - [ ] The requests from the API are sent to an Application Load Balancer (ALB). Models are deployed as AWS Lambda functions invoked by the ALB.
 - [ ] The requests from the API are sent to the models Amazon Simple Queue Service (Amazon SQS) queue. Models are deployed as AWS Lambda functions triggered by SQS events AWS Auto Scaling is enabled on Lambda to increase the number of vCPUs based on the SQS queue size.
 - [ ] The requests from the API are sent to the model's Amazon Simple Queue Service (Amazon SQS) queue. Models are deployed as Amazon Elastic Container Service (Amazon ECS) services reading from the queue AWS App Mesh scales the instances of the ECS cluster based on the SQS queue size.
-- [ ] The requests from the API are sent to the models Amazon Simple Queue Service (Amazon SQS) queue. Models are deployed as Amazon Elastic Container Service (Amazon ECS) services reading from the queue AWS Auto Scaling is enabled on Amazon ECS for both the cluster and copies of the service based on the queue size.
+- [x] The requests from the API are sent to the models Amazon Simple Queue Service (Amazon SQS) queue. Models are deployed as Amazon Elastic Container Service (Amazon ECS) services reading from the queue AWS Auto Scaling is enabled on Amazon ECS for both the cluster and copies of the service based on the queue size.
+
+### A company runs a web application on Amazon EC2 instances in an Auto Scaling group that has a target group. The company designed the application to work with session affinity (sticky sessions) for a better user experience. The application must be available publicly over the internet as an endpoint. A WAF must be applied to the endpoint for additional security. Session affinity (sticky sessions) must be configured on the endpoint. Which combination of steps will meet these requirements? (Choose two.)
+
+- [ ] Create a public Network Load Balancer. Specify the application target group.
+- [ ] Create a Gateway Load Balancer. Specify the application target group.
+- [x] Create a public Application Load Balancer. Specify the application target group.
+- [ ] Create a second target group. Add Elastic IP addresses to the EC2 instances.
+- [x] Create a web ACL in AWS WAF. Associate the web ACL with the endpoint
+
+### A company runs a web application on Amazon EC2 instances in an Auto Scaling group behind an Application Load Balancer that has sticky sessions enabled. The web server currently hosts the user session state. The company wants to ensure high availability and avoid user session state loss in the event of a web server outage. Which solution will meet these requirements? 
+
+- [ ]  Use an Amazon ElastiCache for Memcached instance to store the session dat- [  ] Update the application to use ElastiCache for Memcached to store the session state. 
+- [x]  Use Amazon ElastiCache for Redis to store the session state. Update the application to use ElastiCache for Redis to store the session state. 
+- [ ]  Use an AWS Storage Gateway cached volume to store session data. Update the application to use AWS Storage Gateway cached volume to store the session state. 
+- [ ]  Use Amazon RDS to store the session state. Update the application to use Amazon RDS to store the session state. 
+
+### A company is designing a web application with an internet-facing Application Load Balancer (ALB). The company needs the ALB to receive HTTPS web traffic from the public internet. The ALB must send only HTTPS traffic to the web application servers hosted on the Amazon EC2 instances on port 443. The ALB must perform a health check of the web application servers over HTTPS on port 8443. Which combination of configurations of the security group that is associated with the ALB will meet these requirements? (Choose three.)
+
+- [x] Allow HTTPS inbound traffic from 0.0.0.0/0 for port 443.
+- [ ] Allow all outbound traffic to 0.0.0.0/0 for port 443.
+- [x] Allow HTTPS outbound traffic to the web application instances for port 443.
+- [ ] Allow HTTPS inbound traffic from the web application instances for port 443.
+- [x] Allow HTTPS outbound traffic to the web application instances for the health check on port 8443.
+- [ ] Allow HTTPS inbound traffic from the web application instances for the health check on port 8443.
+
+### A company hosts an application on AWS. The application gives users the ability to upload photos and store the photos in an Amazon S3 bucket. The company wants to use Amazon CloudFront and a custom domain name to upload the photo files to the S3 bucket in the eu-west-1 Region. Which solution will meet these requirements? (Choose two.)
+
+- [x] Use AWS Certificate Manager (ACM) to create a public certificate in the us-east-1 Region. Use the certificate in CloudFront. Most Voted
+- [ ] Use AWS Certificate Manager (ACM) to create a public certificate in eu-west-1. Use the certificate in CloudFront.
+- [ ] Configure Amazon S3 to allow uploads from CloudFront. Configure S3 Transfer Acceleration.
+- [x] Configure Amazon S3 to allow uploads from CloudFront origin access control (OAC). Most Voted
+- [ ] Configure Amazon S3 to allow uploads from CloudFront. Configure an Amazon S3 website endpoint.
