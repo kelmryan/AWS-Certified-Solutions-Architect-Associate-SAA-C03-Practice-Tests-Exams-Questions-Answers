@@ -1139,7 +1139,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 | 708 | [A company uses a Microsoft SQL Server database. The company's applications are connected to the database. The company wants to migrate to an Amazon Aurora PostgreSQL database with minimal changes to the application code. Which combination of steps will meet these requirements? (Choose two.)](#a-company-uses-a-microsoft-sql-server-database-the-companys-applications-are-connected-to-the-database-the-company-wants-to-migrate-to-an-amazon-aurora-postgresql-database-with-minimal-changes-to-the-application-code-which-combination-of-steps-will-meet-these-requirements-choose-two)
 | 709 | [A company plans to rehost an application to Amazon EC2 instances that use Amazon Elastic Block Store (Amazon EBS) as the attached storage. A solutions architect must design a solution to ensure that all newly created Amazon EBS volumes are encrypted by default. The solution must also prevent the creation of unencrypted EBS volumes. Which solution will meet these requirements?](#a-company-plans-to-rehost-an-application-to-amazon-ec2-instances-that-use-amazon-elastic-block-store-amazon-ebs-as-the-attached-storage-a-solutions-architect-must-design-a-solution-to-ensure-that-all-newly-created-amazon-ebs-volumes-are-encrypted-by-default-the-solution-must-also-prevent-the-creation-of-unencrypted-ebs-volumes-which-solution-will-meet-these-requirements)
 | 710 | [An ecommerce company wants to collect user clickstream data from the company's website for real-time analysis. The website experiences fluctuating traffic patterns throughout the day. The company needs a scalable solution that can adapt to varying levels of traffic. Which solution will meet these requirements?](#an-ecommerce-company-wants-to-collect-user-clickstream-data-from-the-companys-website-for-real-time-analysis-the-website-experiences-fluctuating-traffic-patterns-throughout-the-day-the-company-needs-a-scalable-solution-that-can-adapt-to-varying-levels-of-traffic-which-solution-will-meet-these-requirements)
->>>>>>> main
+
 
 ### Which set of Amazon S3 features helps to prevent and recover from accidental data loss?
 
@@ -8017,7 +8017,7 @@ Which solution meets these requirements?
 - [ ] Store the password in AWS Systems Manager Parameter Store. Enable automatic rotation on the parameter.
 - [ ] Store the password in AWS Systems Manager Parameter Store. Write an AWS Lambda function that rotates the password.
 - [ ] Store the password in AWS Key Management Service (AWS KMS). Enable automatic rotation on the customer master key (CMK).
->>>>>>> main
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -8055,7 +8055,6 @@ Which solution meets these requirements?
 
 **[⬆ Back to Top](#table-of-contents)**
 
->>>>>>> main
 ### A company has deployed a multi-account strategy on AWS by using AWS Control Tower. The company has provided individual AWS accounts to each of its developers. The company wants to implement controls to limit AWS resource costs that the developers incur. Which solution will meet these requirements with the LEAST operational overhead?
 
 - [ ] Instruct each developer to tag all their resources with a tag that has a key of CostCenter and a value of the developer's name. Use the required-tags AWS Config managed rule to check for the tag. Create an AWS Lambda function to terminate resources that do not have the tag. Configure AWS Cost Explorer to send a daily report to each developer to monitor their spending.
@@ -8147,7 +8146,7 @@ Machine Images (AMIs). Create another Lambda function to perform the restores wi
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### A company recently migrated to the AWS Clou- [ ]  The company wants a serverless solution for large-scale parallel on-demand processing of asemistructured dataset. The data consists of logs, media files, sales transactions, and IoT sensor data that is stored in Amazon S3. The company wants the solution to process thousands of items in the dataset in parallel. Which solution will meet these requirements with the MOST operational efficiency?
+### A company recently migrated to the AWS Cloud. The company wants a serverless solution for large-scale parallel on-demand processing of asemistructured dataset. The data consists of logs, media files, sales transactions, and IoT sensor data that is stored in Amazon S3. The company wants the solution to process thousands of items in the dataset in parallel. Which solution will meet these requirements with the MOST operational efficiency?
 
 - [ ]  Use the AWS Step Functions Map state in Inline mode to process the data in parallel.
 - [x]  Use the AWS Step Functions Map state in Distributed mode to process the data in parallel.
@@ -8158,14 +8157,14 @@ Machine Images (AMIs). Create another Lambda function to perform the restores wi
 
 ### A company will migrate 10 PB of data to Amazon S3 in 6 weeks. The current data center has a 500 Mbps uplink to the internet. Other on-premises applications share the uplink. The company can use 80% of the internet bandwidth for this one-time migration task. Which solution will meet these requirements?
 
-- [ ] Configure AWS DataSync to migrate the data to Amazon S3 and to automatically verify the dat- [ ]  
+- [ ] Configure AWS DataSync to migrate the data to Amazon S3 and to automatically verify the data.
 - [ ] Use rsync to transfer the data directly to Amazon S3.
 - [ ] Use the AWS CLI and multiple copy processes to send the data directly to Amazon S3.
 - [x] Order multiple AWS Snowball devices. Copy the data to the devices. Send the devices to AWS to copy the data to Amazon S3.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### A company has several on-premises Internet Small Computer Systems Interface (ISCSI) network storage servers. The company wants to reducethe number of these servers by moving to the AWS Clou- [ ]  A solutions architect must provide low-latency access to frequently used data and reduce the dependency on on-premises servers with a minimal number of infrastructure changes. Which solution will meet these requirements?
+### A company has several on-premises Internet Small Computer Systems Interface (ISCSI) network storage servers. The company wants to reducethe number of these servers by moving to the AWS Cloud. A solutions architect must provide low-latency access to frequently used data and reduce the dependency on on-premises servers with a minimal number of infrastructure changes. Which solution will meet these requirements?
 - [ ]  Deploy an Amazon S3 File Gateway.
 - [ ]  Deploy Amazon Elastic Block Store (Amazon EBS) storage with backups to Amazon S3.
 - [ ]  Deploy an AWS Storage Gateway volume gateway that is configured with stored volumes.
@@ -8183,18 +8182,14 @@ after 30 days.
 - [ ]  Store all the objects in S3 Intelligent-Tiering with an S3 Lifecycle rule to transition the objects to S3 Standard-Infrequent Access (S3
 Standard-IA) after 30 days.
 
-**[⬆ Back to Top](#table-of-contents)**
+###  A company has migrated a two-tier application from its on-premises data center to the AWS Cloud. The data tier is a Multi-AZ deployment of Amazon RDS for Oracle with 12 TB of General Purpose SSD Amazon Elastic Block Store (Amazon EBS) storage. The application is  designed to process and store documents in the database as binary large objects (blobs) with an average document size of 6 MB. The database size has grown over time, reducing the performance and increasing the cost of storage. The company must improve the database performance and needs a solution that is highly available and resilient. Which solution will meet these requirements MOST cost-effectively?
 
-###  A company has migrated a two-tier application from its on-premises data center to the AWS Clou- [ ]  The data tier is a Multi-AZ deployment of Amazon RDS for Oracle with 12 TB of General Purpose SSD Amazon Elastic Block Store (Amazon EBS) storage. The application is  designed to process and store documents in the database as binary large objects (blobs) with an average document size of 6 M- [ ]  The database size has grown over time, reducing the performance and increasing the cost of storage. The company must improve the database performance and needs a solution that is highly available and resilient. Which solution will meet these requirements MOST cost-effectively?
-
-- [ ]  Reduce the RDS DB instance size. Increase the storage capacity to 24 Ti- [ ]  Change the storage type to Magneti- [ ] 
+- [ ]  Reduce the RDS DB instance size. Increase the storage capacity to 24 TiB. Change the storage type to Magnetic.
 - [ ] Increase the RDS DB instance size. Increase the storage capacity to 24 TiChange the storage type to Provisioned IOPS.
 - [x]  Create an Amazon S3 bucket. Update the application to store documents in the S3 bucket. Store the object metadata in the existing
 database.
-- [ ]  Create an Amazon DynamoDB table. Update the application to use DynamoD- [ ]  Use AWS Database Migration Service (AWS DMS) to migrate
-data from the Oracle database to DynamoDb
-
-**[⬆ Back to Top](#table-of-contents)**
+- [ ]  Create an Amazon DynamoDB table. Update the application to use DynamoDB. Use AWS Database Migration Service (AWS DMS) to migrate
+data from the Oracle database to DynamoDB.
 
 ### Cost Explorer is showing charges higher than expected for Amazon Elastic Block Store (Amazon EBS) volumes connected to application servers in a production account. A significant portion of the charges from Amazon EBS are from volumes that were created as Provisioned IOPS SSD (io2) volume types. Controlling costs is the highest priority for this application.  Which steps should the user take to analyze and reduce the EBS costs without incurring any application downtime? (Select TWO.)
 
@@ -8209,14 +8204,12 @@ data from the Oracle database to DynamoDb
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### A company is creating a three-tier web application consisting of a web server, an application server, and a database server. The application will track GPS coordinates of packages as they are being delivere- [ ]  The application will update the database every 0.5 seconds. The tracking will need to be read as fast as possible for users to check the status of their packages. Only a few packages might be tracked on some days, whereas millions of packages might be tracked on other days. Tracking will need to be searchable by tracking ID, customer ID, and order I- [ ]  Orders older than 1 month no longer need to be tracke- [ ]  What should a solutions architect recommend to accomplish this with minimal total cost of ownership?
+### A company is creating a three-tier web application consisting of a web server, an application server, and a database server. The application will track GPS coordinates of packages as they are being delivered. The application will update the database every 0.5 seconds. The tracking will need to be read as fast as possible for users to check the status of their packages. Only a few packages might be tracked on some days, whereas millions of packages might be tracked on other days. Tracking will need to be searchable by tracking ID, customer ID, and order ID. Orders older than 1 month no longer need to be tracked. What should a solutions architect recommend to accomplish this with minimal total cost of ownership?
 
-- [ ] Use Amazon DynamoD- [ ]  Activate Auto Scaling for the DynamoDB table. Schedule an automatic deletion script for items older than 1 month.
+- [ ] Use Amazon DynamoDB. Activate Auto Scaling for the DynamoDB table. Schedule an automatic deletion script for items older than 1 month.
 - [x] Use Amazon DynamoDB with global secondary indexes. Activate Auto Scaling for the DynamoDB table and the global secondary indexes. Turn on TTL for the DynamoDB table.
-- [ ] Use an Amazon RDS On-Demand Instance with Provisioned IOPS (PIOPS). Configure Amazon CloudWatch alarms to send notifications when PIOPS are exceede- [ ]  Increase and decrease PIOPS as neede- [ ] 
-- [ ] Use an Amazon RDS Reserved Instance with Provisioned IOPS (PIOPS). Configure Amazon CloudWatch alarms to send notifications when PIOPS are exceede- [ ]  Increase and decrease PIOPS as neede- [ ] 
-
-**[⬆ Back to Top](#table-of-contents)**
+- [ ] Use an Amazon RDS On-Demand Instance with Provisioned IOPS (PIOPS). Configure Amazon CloudWatch alarms to send notifications when PIOPS are exceeded. Increase and decrease PIOPS as needed.
+- [ ] Use an Amazon RDS Reserved Instance with Provisioned IOPS (PIOPS). Configure Amazon CloudWatch alarms to send notifications when PIOPS are exceeded. Increase and decrease PIOPS as needed.
 
 ### A company is designing a website that will be hosted on Amazon S3. How should users be prevented from linking directly to the assets in the S3 bucket?
 
@@ -8225,6 +8218,7 @@ data from the Oracle database to DynamoDb
 - [ ] Create a static website, then configure an Amazon Route 53 record set with an alias pointing to the static website. Provide this URL to users.
 - [ ] Create an Amazon CloudFront distribution with an AWS WAF web ACL that permits access to the origin server through the distribution only.
 
+<<<<<<< HEAD
 **[⬆ Back to Top](#table-of-contents)**
 
 ### A company has a well-architected application that streams audio data by using UDP in the AWS Clou- [ ]  The company hosts the application in the eu-central-1 Region. The company plans to offer services to North American users. A solutions architect must improve application network performance for the North American users. Which of the following is the MOST cost-effective solution?
@@ -8794,3 +8788,4 @@ A company is running a multi-tier web application on AWS. The application runs i
 - [ ] Use Amazon Managed Service for Apache Flink (previously known as Amazon Kinesis Data Analytics) to capture the clickstream data. Use AWS Lambda to process the data in real time.
 
 **[⬆ Back to Top](#table-of-contents)**
+
